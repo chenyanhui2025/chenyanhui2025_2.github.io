@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>部门任务交互页面</title>
+</head>
+
+<body>
+  <table id="taskTable">
+    <thead>
+      <tr>
+        <th>部门</th>
+        <th>数据分析部</th>
+        <th>客户服务部</th>
+        <th>HRBP部</th>
+        <th>商品运营部</th>
+        <th>商品支持部</th>
+        <th>推广部</th>
+        <th>营销策划部</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 生成所有部门行 -->
+      <tr>
+        <td>数据分析部</td>
+        <td class="cell" data-dep="数据分析部" data-target="数据分析部"></td>
+        <td class="cell" data-dep="数据分析部" data-target="客户服务部"></td>
+        <td class="cell" data-dep="数据分析部" data-target="HRBP部"></td>
+        <td class="cell" data-dep="数据分析部" data-target="商品运营部"></td>
+        <td class="cell" data-dep="数据分析部" data-target="商品支持部"></td>
+        <td class="cell" data-dep="数据分析部" data-target="推广部"></td>
+        <td class="cell" data-dep="数据分析部" data-target="营销策划部"></td>
+      </tr>
+      <tr>
+        <td>客户服务部</td>
+        <td class="cell" data-dep="客户服务部" data-target="数据分析部"></td>
+        <td class="cell" data-dep="客户服务部" data-target="客户服务部"></td>
+        <td class="cell" data-dep="客户服务部" data-target="HRBP部"></td>
+        <td class="cell" data-dep="客户服务部" data-target="商品运营部"></td>
+        <td class="cell" data-dep="客户服务部" data-target="商品支持部"></td>
+        <td class="cell" data-dep="客户服务部" data-target="推广部"></td>
+        <td class="cell" data-dep="客户服务部" data-target="营销策划部"></td>
+      </tr>
+      <tr>
+        <td>HRBP部</td>
+        <td class="cell" data-dep="HRBP部" data-target="数据分析部"></td>
+        <td class="cell" data-dep="HRBP部" data-target="客户服务部"></td>
+        <td class="cell" data-dep="HRBP部" data-target="HRBP部"></td>
+        <td class="cell" data-dep="HRBP部" data-target="商品运营部"></td>
+        <td class="cell" data-dep="HRBP部" data-target="商品支持部"></td>
+        <td class="cell" data-dep="HRBP部" data-target="推广部"></td>
+        <td class="cell" data-dep="HRBP部" data-target="营销策划部"></td>
+      </tr>
+      <tr>
+        <td>商品运营部</td>
+        <td class="cell" data-dep="商品运营部" data-target="数据分析部"></td>
+        <td class="cell" data-dep="商品运营部" data-target="客户服务部"></td>
+        <td class="cell" data-dep="商品运营部" data-target="HRBP部"></td>
+        <td class="cell" data-dep="商品运营部" data-target="商品运营部"></td>
+        <td class="cell" data-dep="商品运营部" data-target="商品支持部"></td>
+        <td class="cell" data-dep="商品运营部" data-target="推广部"></td>
+        <td class="cell" data-dep="商品运营部" data-target="营销策划部"></td>
+      </tr>
+      <tr>
+        <td>商品支持部</td>
+        <td class="cell" data-dep="商品支持部" data-target="数据分析部"></td>
+        <td class="cell" data-dep="商品支持部" data-target="客户服务部"></td>
+        <td class="cell" data-dep="商品支持部" data-target="HRBP部"></td>
+        <td class="cell" data-dep="商品支持部" data-target="商品运营部"></td>
+        <td class="cell" data-dep="商品支持部" data-target="商品支持部"></td>
+        <td class="cell" data-dep="商品支持部" data-target="推广部"></td>
+        <td class="cell" data-dep="商品支持部" data-target="营销策划部"></td>
+      </tr>
+      <tr>
+        <td>推广部</td>
+        <td class="cell" data-dep="推广部" data-target="数据分析部"></td>
+        <td class="cell" data-dep="推广部" data-target="客户服务部"></td>
+        <td class="cell" data-dep="推广部" data-target="HRBP部"></td>
+        <td class="cell" data-dep="推广部" data-target="商品运营部"></td>
+        <td class="cell" data-dep="推广部" data-target="商品支持部"></td>
+        <td class="cell" data-dep="推广部" data-target="推广部"></td>
+        <td class="cell" data-dep="推广部" data-target="营销策划部"></td>
+      </tr>
+      <tr>
+        <td>营销策划部</td>
+        <td class="cell" data-dep="营销策划部" data-target="数据分析部"></td>
+        <td class="cell" data-dep="营销策划部" data-target="客户服务部"></td>
+        <td class="cell" data-dep="营销策划部" data-target="HRBP部"></td>
+        <td class="cell" data-dep="营销策划部" data-target="商品运营部"></td>
+        <td class="cell" data-dep="营销策划部" data-target="商品支持部"></td>
+        <td class="cell" data-dep="营销策划部" data-target="推广部"></td>
+        <td class="cell" data-dep="营销策划部" data-target="营销策划部"></td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+
+</html>

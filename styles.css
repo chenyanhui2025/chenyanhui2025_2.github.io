@@ -1,0 +1,87 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+  position: relative;
+}
+
+.add-btn {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #f8f9fa;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 100;
+}
+
+.task-item {
+  margin-bottom: 8px;
+  padding: 4px 8px 4px 24px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arrow {
+  width: 12px;
+  height: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.arrow.red {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 0 L100 50 L50 100 L0 50 Z" fill="red"/></svg>');
+}
+
+.arrow.blue {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 100 L0 50 L50 0 L100 50 Z" fill="blue"/></svg>');
+}
+
+.task-text {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  flex-grow: 1;
+  min-width: 100px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.gray {
+  background-color: #ccc;
+}
+
+.green {
+  background-color: green;
+}
+
+.delete-btn {
+  color: red;
+  cursor: pointer;
+  margin-left: 8px;
+}
